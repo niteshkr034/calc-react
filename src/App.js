@@ -1,7 +1,7 @@
 // import { clear } from "@testing-library/user-event/dist/clear";
-import { useReducer } from "react";
+import { useEffect, useReducer } from "react";
 import DigitButton from "./DigitButton";
-import OperationButton from "./OperaionButton";
+import OperationButton from "./OperationButton";
 import "./styles.css";
 
 export const ACTIONS = {
@@ -126,6 +126,8 @@ function App() {
     reducer,
     {}
   );
+
+ 
 
   return (
     <div className="calculator-grid">
